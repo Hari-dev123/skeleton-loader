@@ -1,0 +1,45 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100;
+    height: 100vh;
+    background: white;
+}
+.card{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+.cover{
+    width: 100;
+    height: 200px;
+    background: #ececec;
+    
+}
+.square{
+    width: 150px;
+    height: 150px;
+    background: #ececec;
+    margin: 30px;
+}
+.line{
+    width: 100;
+    height: 50px;
+    background: #ececec;
+    margin: 30px;
+}
+.cover, .square, .line{
+    background-image: linear-gradient(120deg,#ececec 50%,#fafafa 60%,#fafafa 61%, #ececec 70%);
+    background-size: 200%;
+    background-position: 100% 0;
+    animation: wave 1s linear infinite;
+}
+@keyframes wave {
+    100%{
+        background-position: -100% 0;
+    }
+}
